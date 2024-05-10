@@ -11,6 +11,9 @@ body {
 
 #game-container {
     text-align: center;
+    max-width: 600px; /* Define a largura máxima do contêiner do jogo */
+    margin: auto; /* Centraliza o contêiner do jogo horizontalmente */
+    padding: 20px; /* Adiciona algum espaço interno */
 }
 
 .game-title {
@@ -31,13 +34,14 @@ body {
     border-radius: 5px;
     background-color: #007bff;
     color: #fff;
-    width: 60%;
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
 }
 
 .btn-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .correct-answer {
@@ -130,75 +134,59 @@ body {
 }
 
 #question-text {
-    font-size: 1.3rem; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-bottom: 20px; /* Adiciona espaço extra abaixo da pergunta */
+    font-size: 1.3rem; /* Ajuste o tamanho da fonte */
 }
 
-/* Estilo para o tamanho da fonte das respostas */
-.btn-container button {
-    font-size: 1.2rem; /* Tamanho da fonte aumentado */
+/* Ajuste de estilo para o contêiner do troféu */
+#trophy-container {
+    margin-top: 20px; /* Adiciona espaço extra acima do contêiner do troféu */
 }
 
-/* Adicione estilos para a introdução */
+/* Estilos para o contêiner de estatísticas */
+#statistics {
+    margin-top: 20px; /* Adiciona espaço extra acima do contêiner de estatísticas */
+}
+
+/* Estilo para o texto da introdução */
 #introduction {
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
-    color: #4133ff; /* Define a cor do texto */
-    margin-bottom: 20px; /* Adiciona espaço abaixo da introdução */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona espaço extra abaixo do texto */
 }
 
-/* Estilo para o título do jogo */
-.game-title {
-    color: #001f3f; /* Define a cor do texto como azul escuro */
-}
-
- /* Estilo para a animação do botão */
- @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-#answer-buttons {
-    margin-bottom: 20px; /* Adiciona espaçamento abaixo das opções de resposta */
-}
-
-#score,
+/* Estilo para o temporizador */
 #time-container {
-    margin-bottom: 20px; /* Adiciona espaçamento abaixo da pontuação e do tempo */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    margin-top: 10px; /* Adiciona espaço extra acima do temporizador */
 }
 
-#score,
-#time-container span {
-    font-size: 1.2rem; /* Ajusta o tamanho do texto da pontuação e do tempo */
+/* Estilo para o texto do temporizador */
+#timer-value {
+    font-weight: bold; /* Adiciona negrito ao texto */
 }
 
-@keyframes alert {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+/* Estilo para a pontuação final */
+#final-score {
+    font-size: 1.3rem; /* Define o tamanho da fonte */
+    font-weight: bold; /* Adiciona negrito ao texto */
+    margin-bottom: 20px; /* Adiciona espaço extra abaixo do texto */
 }
 
-.alert-animation {
-    animation: alert 0.5s infinite alternate; /* Aplica a animação de alerta */
+/* Estilo para o contêiner de troféu */
+#trophy-container {
+    margin-top: 20px; /* Adiciona espaço extra acima do contêiner de troféu */
 }
 
-/* Estilo para o botão */
-#start-button {
-    animation: pulse 2s infinite; /* Aplica a animação "pulse" ao botão */
-}
-
+/* Estilo para o botão de reiniciar o jogo */
 .restart-btn {
-    animation: pulse 2s infinite; /* Aplica a animação "pulse" ao botão de reiniciar jogo */
+    margin-top: 20px; /* Adiciona espaço extra acima do botão */
+}
+
+/* Estilo para o botão de reiniciar o jogo */
+.restart-btn {
+    margin-top: 20px; /* Adiciona espaço extra acima do botão */
+}
+
+/* Estilo para os ícones de feedback */
+.feedback-icon {
+    margin: 10px; /* Adiciona espaço entre os ícones */
 }
