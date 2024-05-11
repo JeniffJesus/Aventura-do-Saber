@@ -2,6 +2,14 @@ const applauseSound = new Audio("applause.mp3");
 const cheersSound = new Audio("cheers.mp3");
 const encouragementSound = new Audio("encouragement.mp3");
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const startButton = document.getElementById("start-button");
     const introduction = document.getElementById("introduction");
@@ -182,27 +190,27 @@ document.addEventListener('DOMContentLoaded', () => {
     if (score === 0) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "zero-score-trophy.png"; 
-        trophyImage.style.width = "600px";
-        trophyMessage.innerText = "Não respondeste corretamente a nenhuma pergunta. Deves estudar!";
+        trophyImage.style.width = "450px";
+        trophyMessage.innerText = "O Jaimão está desapontado consigo.😞 Comece a estudar!";
         trophyMessage.style.color = "red"; // Define a cor do texto como vermelho
         playZeroScoreSound(); // Reproduzir som de pontuação zero
-    } else if (score >= 80) {
+    } else if (score >= 110) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-expert.png";
-        trophyImage.style.width = "600px";
-        trophyMessage.innerText = "Parabéns! O Professor Jaime está muito orgulhoso de ti!";
+        trophyImage.style.width = "450px";
+        trophyMessage.innerText = "Parabéns!😃 O Professor Jaime está muito orgulhoso de ti!";
         playApplauseSound();
-    } else if (score >= 50) {
+    } else if (score >= 70) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-intermediate.png";
-        trophyImage.style.width = "600px";
-        trophyMessage.innerText = "Bom trabalho! Continua a estudar para melhorar.";
+        trophyImage.style.width = "450px";
+        trophyMessage.innerText = "Bom trabalho!👍 Continua a estudar para melhorar.";
         playCheersSound();
     } else {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-beginner.png";
-        trophyImage.style.width = "600px";
-        trophyMessage.innerText = "Continua a estudar! Podes fazer melhor.";
+        trophyImage.style.width = "450px";
+        trophyMessage.innerText = "Continua a estudar!💪 Podes fazer melhor.";
         // Não definir a cor do texto aqui para que permaneça a preto por padrão
         playEncouragementSound();
     }
@@ -269,3 +277,4 @@ function playZeroScoreSound() {
         encouragementSound.play();
     }
 });
+

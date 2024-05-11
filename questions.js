@@ -271,5 +271,26 @@ const QUESTIONS = [
                 "correct": false
             }
         ]
+    },
+    {
+        "question": "Num mercado de concorrência monopolística, as muitas empresas existentes detêm algum poder de mercado. Esta afirmação é",
+        "answers": [
+            {
+                "text": "verdadeira, pois as empresas, ao venderem produtos diferenciados, têm algum controlo sobre os seus preços.",
+                "correct": true
+            },
+            {
+                "text": "verdadeira, pois as empresas, ao venderem produtos homogéneos, têm alguma capacidade de definir os seus preços.",
+                "correct": false
+            },
+            {
+                "text": "falsa, pois as empresas, como são de idêntica dimensão, têm de aceitar o preço de venda definido no mercado.",
+                "correct": false
+            },
+            {
+                "text": "falsa, pois as empresas, como apresentam custos idênticos, têm de vender ao preço definido no mercado.",
+                "correct": false
+            }
+        ]
     }
 ];
