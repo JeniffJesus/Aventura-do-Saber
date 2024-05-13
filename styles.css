@@ -250,10 +250,10 @@ img {
         padding: 12px; /* Reduz o espaço interno do contêiner do jogo */
     }
     .btn {
-        font-size: 1rem; /* Reduz o tamanho dos botões para telas menores */
+        font-size: 0,9rem; /* Reduz o tamanho dos botões para telas menores */
     }
     #trophy-message {
-        font-size: 1,5rem; /* Reduz o tamanho da mensagem do troféu para telas menores */
+        font-size: 1rem; /* Reduz o tamanho da mensagem do troféu para telas menores */
     }
     #start-image {
         max-width: 100%; /* Garante que a imagem de início se ajuste à largura da tela */
