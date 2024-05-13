@@ -128,7 +128,7 @@ body {
 
 /* Estilos para mensagens de troféu */
 #trophy-message {
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    font-size: 1.8rem; /* Ajusta o tamanho da fonte */
     font-weight: bold; /* Adiciona negrito para destacar a mensagem */
     margin-top: 10px; /* Adiciona espaço extra acima da mensagem */
 }
