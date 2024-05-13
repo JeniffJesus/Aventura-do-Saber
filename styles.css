@@ -11,9 +11,9 @@ body {
 
 #game-container {
     text-align: center;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
+    max-width: 600px; /* Define a largura máxima do contêiner do jogo */
+    margin: auto; /* Centraliza o contêiner do jogo horizontalmente */
+    padding: 20px; /* Adiciona algum espaço interno */
 }
 
 .game-title {
@@ -34,8 +34,8 @@ body {
     border-radius: 5px;
     background-color: #007bff;
     color: #fff;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
 }
 
 .btn-container {
@@ -128,28 +128,134 @@ body {
 
 /* Estilos para mensagens de troféu */
 #trophy-message {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 10px;
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Adiciona negrito para destacar a mensagem */
+    margin-top: 10px; /* Adiciona espaço extra acima da mensagem */
 }
 
 #question-text {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Ajuste o tamanho da fonte */
 }
 
 /* Ajuste de estilo para o contêiner do troféu */
 #trophy-container {
-    margin-top: 20px;
+    margin-top: 20px; /* Adiciona espaço extra acima do contêiner do troféu */
 }
 
-/* Estilo para o contêiner de estatísticas */
+/* Estilos para o contêiner de estatísticas */
 #statistics {
-    font-size: 1.2rem;
-    margin-top: 20px;
+    margin-top: 20px; /* Adiciona espaço extra acima do contêiner de estatísticas */
 }
 
-/* Estilos para os ícones de feedback */
+/* Estilo para o texto da introdução */
+#introduction {
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona espaço extra abaixo do texto */
+}
+
+/* Estilo para o temporizador */
+#time-container {
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    margin-top: 10px; /* Adiciona espaço extra acima do temporizador */
+}
+
+/* Estilo para o texto do temporizador */
+#timer-value {
+    font-weight: bold; /* Adiciona negrito ao texto */
+}
+
+/* Estilo para a pontuação final */
+#final-score {
+    font-size: 1.3rem; /* Define o tamanho da fonte */
+    font-weight: bold; /* Adiciona negrito ao texto */
+    margin-bottom: 20px; /* Adiciona espaço extra abaixo do texto */
+}
+
+/* Estilo para o contêiner de troféu */
+#trophy-container {
+    margin-top: 20px; /* Adiciona espaço extra acima do contêiner de troféu */
+}
+
+/* Estilo para o botão de reiniciar o jogo */
+.restart-btn {
+    margin-top: 20px; /* Adiciona espaço extra acima do botão */
+}
+
+/* Estilo para o botão de reiniciar o jogo */
+.restart-btn {
+    margin-top: 20px; /* Adiciona espaço extra acima do botão */
+}
+
+/* Estilo para os ícones de feedback */
 .feedback-icon {
-    margin: 0 5px;
-    vertical-align: middle;
+    margin: 10px; /* Adiciona espaço entre os ícones */
+}
+
+/* Estilo para todas as imagens do jogo */
+img {
+    max-width: 500%; /* Define a largura máxima como 100% do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Estilo específico para a imagem de início */
+#start-image {
+    max-width: 400px; /* Define a largura máxima específica para a imagem de início */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Estilo para a animação do botão */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes alert {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.alert-animation {
+    animation: alert 0.5s infinite alternate; /* Aplica a animação de alerta */
+}
+
+/* Estilo para o botão */
+#start-button {
+    animation: pulse 2s infinite; /* Aplica a animação "pulse" ao botão */
+}
+
+.restart-btn {
+    animation: pulse 2s infinite; /* Aplica a animação "pulse" ao botão de reiniciar jogo */
+}
+
+/* Adicione regras de mídia para telas menores */
+@media screen and (max-width: 600px) {
+    .game-title {
+        font-size: 1.5rem; /* Reduz o tamanho do título do jogo para telas menores */
+    }
+    #game-container {
+        padding: 10px; /* Reduz o espaço interno do contêiner do jogo */
+    }
+    .btn {
+        font-size: 0.8rem; /* Reduz o tamanho dos botões para telas menores */
+    }
+    #trophy-message {
+        font-size: 1rem; /* Reduz o tamanho da mensagem do troféu para telas menores */
+    }
+    #start-image {
+        max-width: 100%; /* Garante que a imagem de início se ajuste à largura da tela */
+    }
 }

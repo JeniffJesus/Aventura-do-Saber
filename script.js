@@ -2,14 +2,6 @@ const applauseSound = new Audio("applause.mp3");
 const cheersSound = new Audio("cheers.mp3");
 const encouragementSound = new Audio("encouragement.mp3");
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     const startButton = document.getElementById("start-button");
     const introduction = document.getElementById("introduction");
@@ -277,4 +269,3 @@ function playZeroScoreSound() {
         encouragementSound.play();
     }
 });
-
