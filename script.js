@@ -182,26 +182,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (score === 0) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "zero-score-trophy.png"; 
-        trophyImage.style.width = "450px";
+        trophyImage.style.width = "400px";
         trophyMessage.innerText = "O Jaimão está desapontado consigo.😞 Comece a estudar!";
         trophyMessage.style.color = "red"; // Define a cor do texto como vermelho
         playZeroScoreSound(); // Reproduzir som de pontuação zero
     } else if (score >= 110) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-expert.png";
-        trophyImage.style.width = "450px";
+        trophyImage.style.width = "400px";
         trophyMessage.innerText = "Parabéns!😃 O Professor Jaime está muito orgulhoso de ti!";
         playApplauseSound();
     } else if (score >= 70) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-intermediate.png";
-        trophyImage.style.width = "450px";
+        trophyImage.style.width = "400px";
         trophyMessage.innerText = "Bom trabalho!👍 Continua a estudar para melhorar.";
         playCheersSound();
     } else {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-beginner.png";
-        trophyImage.style.width = "450px";
+        trophyImage.style.width = "400px";
         trophyMessage.innerText = "Continua a estudar!💪 Podes fazer melhor.";
         // Não definir a cor do texto aqui para que permaneça a preto por padrão
         playEncouragementSound();
