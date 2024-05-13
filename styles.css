@@ -193,7 +193,7 @@ body {
 
 /* Estilo para todas as imagens do jogo */
 img {
-    max-width: 400%; /* Define a largura máxima como 100% do contêiner pai */
+    max-width: 300%; /* Define a largura máxima como 100% do contêiner pai */
     height: auto; /* Mantém a proporção original da imagem */
 }
 
