@@ -25,6 +25,7 @@ body {
     display: none;
 }
 
+/* Estilo para botões comuns */
 .btn {
     font-size: 1rem;
     padding: 10px 20px;
@@ -36,6 +37,13 @@ body {
     color: #fff;
     width: 100%; /* Ocupa toda a largura do contêiner pai */
     box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+}
+
+/* Estilo para botões mais estreitos */
+.btn-small {
+    width: auto; /* Largura automática, se ajusta ao conteúdo */
+    padding: 12px 25px; /* Menor preenchimento interno */
+    font-size: 1rem; /* Tamanho de fonte um pouco menor */
 }
 
 .btn-container {
@@ -116,7 +124,7 @@ body {
     display: none;
 }
 
-/* Hide the "Start Game" button after the game starts */
+/* indicando que o jogo já foi iniciado e não há necessidade de mostrar o botão de início novamente. */
 #start-button.hide {
     display: none;
 }
@@ -224,17 +232,20 @@ body {
     animation: pulse 2s infinite; /* Aplica a animação "pulse" ao botão de reiniciar jogo */
 }
 
+#start-btn, #restart-btn {
+    width: 30px; /* Defina a largura desejada */
+}
 
 /* Regras de mídia para telas menores */
 @media only screen and (max-width: 600px) {
     .game-title {
-        font-size: 1.6rem; /* Reduz o tamanho do título em telas menores */
+        font-size: 1.7rem; /* Reduz o tamanho do título em telas menores */
     }
     .btn {
-        font-size: 1rem; /* Reduz o tamanho dos botões em telas menores */
+        font-size: 0,9rem; /* Reduz o tamanho dos botões em telas menores */
     }
     #introduction {
-        font-size: 1.2rem; /* Reduz o tamanho da introdução em telas menores */
+        font-size: 1.1rem; /* Reduz o tamanho da introdução em telas menores */
     }
     #question-text {
         font-size: 1.1rem; /* Reduz o tamanho do texto da pergunta em telas menores */
