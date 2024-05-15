@@ -268,4 +268,9 @@ function playZeroScoreSound() {
     function playEncouragementSound() {
         encouragementSound.play();
     }
+
+    function gameEnded() {
+        // Remova a classe hide do botão "Reiniciar Jogo" para exibi-lo
+        document.getElementById("restart-button").classList.remove("hide");
+    }
 });

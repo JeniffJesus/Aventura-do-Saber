@@ -236,16 +236,16 @@ body {
     width: 30px; /* Defina a largura desejada */
 }
 
-/* Regras de mídia para telas menores */
 @media only screen and (max-width: 600px) {
     .game-title {
         font-size: 1.7rem; /* Reduz o tamanho do título em telas menores */
     }
     .btn {
-        font-size: 0,9rem; /* Reduz o tamanho dos botões em telas menores */
+        font-size: 0.9rem; /* Reduz o tamanho dos botões em telas menores */
     }
     #introduction {
-        font-size: 1.1rem; /* Reduz o tamanho da introdução em telas menores */
+        font-size: 1.2rem; /* Reduz o tamanho da introdução em telas menores */
+        line-height: 1.5; /* Ajusta a altura da linha para melhor legibilidade */
     }
     #question-text {
         font-size: 1.1rem; /* Reduz o tamanho do texto da pergunta em telas menores */
