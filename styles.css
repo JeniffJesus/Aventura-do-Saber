@@ -11,7 +11,7 @@ body {
 
 #game-container {
     text-align: center;
-    max-width: 600px; /* Define a largura máxima do contêiner do jogo */
+    max-width: 500px; /* Define a largura máxima do contêiner do jogo */
     margin: auto; /* Centraliza o contêiner do jogo horizontalmente */
     padding: 20px; /* Adiciona algum espaço interno */
 }
@@ -235,7 +235,7 @@ body {
     width: 30px; /* Defina a largura desejada */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
     .game-title {
         font-size: 1.7rem; /* Reduz o tamanho do título em telas menores */
     }
