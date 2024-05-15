@@ -235,7 +235,7 @@ body {
     width: 30px; /* Defina a largura desejada */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .game-title {
         font-size: 1.7rem; /* Reduz o tamanho do título em telas menores */
     }
