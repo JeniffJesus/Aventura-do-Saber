@@ -235,23 +235,34 @@ body {
     width: 30px; /* Defina a largura desejada */
 }
 
-@media only screen and (max-width: 400px) {
+
+/* Em vez de definir largura máxima fixa, use uma porcentagem */
+#game-container {
+    text-align: center;
+    max-width: 90%; /* Use uma porcentagem em vez de pixels */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Use Media Queries para ajustar o tamanho do texto e dos botões em telas menores */
+@media only screen and (max-width: 600px) {
     .game-title {
-        font-size: 1.7rem; /* Reduz o tamanho do título em telas menores */
+        font-size: 1.5rem;
     }
     .btn {
-        font-size: 0.9rem; /* Reduz o tamanho dos botões em telas menores */
+        font-size: 0.8rem;
+        padding: 8px 16px; /* Reduza um pouco o preenchimento dos botões */
     }
     #introduction {
-        font-size: 1.1rem; /* Reduz ainda mais o tamanho da introdução em telas menores */
+        font-size: 1rem;
     }
     #question-text {
-        font-size: 1.1rem; /* Reduz o tamanho do texto da pergunta em telas menores */
+        font-size: 1rem;
     }
     #trophy-message {
-        font-size: 1.2rem; /* Reduz o tamanho da mensagem de troféu em telas menores */
+        font-size: 1.1rem;
     }
     #final-score {
-        font-size: 1rem; /* Reduz o tamanho da pontuação final em telas menores */
+        font-size: 0.9rem;
     }
 }
