@@ -244,10 +244,16 @@ body {
         font-size: 0.9rem; /* Reduz o tamanho dos botões em telas menores */
     }
     #introduction {
-        font-size: 1rem; /* Reduz ainda mais o tamanho da introdução em telas menores */
+        font-size: 1.1rem; /* Reduz o tamanho da introdução em telas menores */
         line-height: 1.4; /* Ajusta a altura da linha para melhor legibilidade */
         margin: 10px; /* Adiciona uma margem para separar a introdução das bordas */
         padding: 10px; /* Adiciona um preenchimento interno para melhorar a legibilidade */
+        background-color: #f9f9f9; /* Adiciona um fundo para melhorar o contraste */
+        border-radius: 5px; /* Adiciona cantos arredondados para uma aparência mais suave */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para destacar a introdução */
+    }
+    #introduction p {
+        margin: 5px 0; /* Ajusta a margem entre os parágrafos */
     }
     #question-text {
         font-size: 1.1rem; /* Reduz o tamanho do texto da pergunta em telas menores */
