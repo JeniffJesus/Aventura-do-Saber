@@ -247,22 +247,22 @@ body {
 /* Use Media Queries para ajustar o tamanho do texto e dos botões em telas menores */
 @media only screen and (max-width: 600px) {
     .game-title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     .btn {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 8px 16px; /* Reduza um pouco o preenchimento dos botões */
     }
     #introduction {
-        font-size: 1rem;
-    }
-    #question-text {
-        font-size: 1rem;
-    }
-    #trophy-message {
         font-size: 1.1rem;
     }
+    #question-text {
+        font-size: 1.1rem;
+    }
+    #trophy-message {
+        font-size: 1.2rem;
+    }
     #final-score {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
