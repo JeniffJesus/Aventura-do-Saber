@@ -9,11 +9,12 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Estilo geral do jogo */
 #game-container {
     text-align: center;
-    max-width: 400px; /* Define a largura máxima do contêiner do jogo */
-    margin: auto; /* Centraliza o contêiner do jogo horizontalmente */
-    padding: 20px; /* Adiciona algum espaço interno */
+    max-width: 90%; /* Use uma porcentagem em vez de pixels */
+    margin: auto;
+    padding: 20px;
 }
 
 .game-title {
@@ -236,16 +237,9 @@ body {
 }
 
 
-/* Em vez de definir largura máxima fixa, use uma porcentagem */
-#game-container {
-    text-align: center;
-    max-width: 100%; /* Use uma porcentagem em vez de pixels */
-    margin: auto;
-    padding: 20px;
-}
-
-/* Use Media Queries para ajustar o tamanho do texto e dos botões em telas menores */
+/* Media Queries para telas menores */
 @media only screen and (max-width: 600px) {
+    /* Ajustes de tamanho para elementos em telas menores */
     .game-title {
         font-size: 1.5rem;
     }
@@ -253,16 +247,30 @@ body {
         font-size: 0.8rem;
         padding: 8px 16px; /* Reduza um pouco o preenchimento dos botões */
     }
-    #introduction {
-        font-size: 1rem;
-    }
-    #question-text {
-        font-size: 1rem;
-    }
-    #trophy-message {
-        font-size: 1.1rem;
-    }
+    #introduction,
+    #question-text,
+    #trophy-message,
     #final-score {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Ajuste do tamanho da fonte */
     }
+}
+
+/* Estilo para a imagem principal */
+#start-image {
+    max-width: 100%; /* Ajusta a largura máxima da imagem para 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem não tenha margens extras */
+}
+
+/* Estilo para o contêiner do troféu */
+#trophy-container {
+    margin-top: 20px; /* Adiciona espaço extra acima do contêiner de troféu */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilo para a mensagem do troféu */
+#trophy-message {
+    font-size: 1.3rem; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Adiciona negrito para destacar a mensagem */
+    margin-top: 10px; /* Adiciona espaço extra acima da mensagem */
 }
