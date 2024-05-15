@@ -239,7 +239,7 @@ body {
 /* Em vez de definir largura máxima fixa, use uma porcentagem */
 #game-container {
     text-align: center;
-    max-width: 90%; /* Use uma porcentagem em vez de pixels */
+    max-width: 100%; /* Use uma porcentagem em vez de pixels */
     margin: auto;
     padding: 20px;
 }
