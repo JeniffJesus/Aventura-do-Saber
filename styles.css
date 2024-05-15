@@ -149,7 +149,7 @@ body {
 
 /* Estilo para o texto da introdução */
 #introduction {
-    font-size: 1.3rem; /* Define o tamanho da fonte */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
     margin-bottom: 20px; /* Adiciona espaço extra abaixo do texto */
 }
 
@@ -166,7 +166,7 @@ body {
 
 /* Estilo para a pontuação final */
 #final-score {
-    font-size: 1rem; /* Define o tamanho da fonte */
+    font-size: 1,2rem; /* Define o tamanho da fonte */
     font-weight: bold; /* Adiciona negrito ao texto */
     margin-bottom: 20px; /* Adiciona espaço extra abaixo do texto */
 }
@@ -186,16 +186,55 @@ body {
     margin: 10px; /* Adiciona espaço entre os ícones */
 }
 
+/* Estilo para a animação do botão */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes alert {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.alert-animation {
+    animation: alert 0.5s infinite alternate; /* Aplica a animação de alerta */
+}
+
+/* Estilo para o botão */
+#start-button {
+    animation: pulse 2s infinite; /* Aplica a animação "pulse" ao botão */
+}
+
+.restart-btn {
+    animation: pulse 2s infinite; /* Aplica a animação "pulse" ao botão de reiniciar jogo */
+}
+
+
 /* Regras de mídia para telas menores */
 @media only screen and (max-width: 600px) {
     .game-title {
-        font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
+        font-size: 1.6rem; /* Reduz o tamanho do título em telas menores */
     }
     .btn {
-        font-size: 0.9rem; /* Reduz o tamanho dos botões em telas menores */
+        font-size: 1rem; /* Reduz o tamanho dos botões em telas menores */
     }
     #introduction {
-        font-size: 1.3rem; /* Reduz o tamanho da introdução em telas menores */
+        font-size: 1.2rem; /* Reduz o tamanho da introdução em telas menores */
     }
     #question-text {
         font-size: 1.1rem; /* Reduz o tamanho do texto da pergunta em telas menores */
@@ -204,6 +243,6 @@ body {
         font-size: 1.2rem; /* Reduz o tamanho da mensagem de troféu em telas menores */
     }
     #final-score {
-        font-size: 0.8rem; /* Reduz o tamanho da pontuação final em telas menores */
+        font-size: 1rem; /* Reduz o tamanho da pontuação final em telas menores */
     }
 }
