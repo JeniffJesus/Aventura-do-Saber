@@ -1,294 +1,210 @@
 const QUESTIONS = [
     {
-        "question": "Uma das características do mercado de concorrência perfeita é a de os produtos não apresentarem diferenças significativas entre eles.Esta característica denomina-se...",
+        "question": "O que é um IDS?",
         "answers": [
             {
-                "text": "homogeneidade",
+                "text": "Monitora atividades suspeitas na rede para identificar intrusões.",
                 "correct": true
             },
             {
-                "text": "atomicidade",
+                "text": "Cria backups de dados sensíveis em sistemas de segurança.",
                 "correct": false
             },
             {
-                "text": "transparência",
+                "text": "Analisa atividades suspeitas na rede para detectar intrusões.",
                 "correct": false
             },
             {
-                "text": "permeabilidade",
+                "text": "Protocolo de comunicação seguro para garantir integridade das informações.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "Se o preço do bem A aumentar e se esse facto for o único responsável pelo aumento da procura do bem B, podemos afirmar que...",
+        "question": "Qual é a importância da criptografia?",
         "answers": [
             {
-                "text": "... B é substituto de A",
+                "text": "Proteger dados sensíveis através de codificação para evitar acesso não autorizado.",
                 "correct": true
             },
             {
-                "text": "... B é complementar de A",
+                "text": "Garantir a segurança das informações e a disponibilidade dos sistemas.",
                 "correct": false
             },
             {
-                "text": "... A é independente de B",
+                "text": "Proteger contra vírus e outras ameaças cibernéticas com criptografia.",
                 "correct": false
             },
             {
-                "text": "... A é inferior a B",
+                "text": "Gerenciar acesso a redes sociais e outras plataformas online.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "Segundo a lei da oferta...",
+        "question": "O que é Engenharia Social?",
         "answers": [
             {
-                "text": "... a quantidade oferecida de um bem aumenta quando o seu preço aumenta.",
+                "text": "Explora aspectos psicológicos para obter informações confidenciais e acesso.",
                 "correct": true
             },
             {
-                "text": "... a quantidade oferecida de um bem aumenta quando o seu preço diminui.",
+                "text": "Ramo da engenharia de software focado na segurança.",
                 "correct": false
             },
             {
-                "text": "... o preço de um bem aumenta quando a quantidade oferecida desse bem aumenta.",
+                "text": "Método que utiliza design de interfaces para melhorar experiência do usuário.",
                 "correct": false
             },
             {
-                "text": "... o preço de um bem aumenta quando a quantidade oferecida desse bem diminui.",
+                "text": "Estuda processos de produção de hardware e software.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "Um mercado de monopólio caracteriza-se pela existência de...",
+        "question": "O que é um Firewall?",
         "answers": [
             {
-                "text": "... um vendedor e muitos compradores.",
+                "text": "Dispositivo que regula o fluxo de tráfego de rede.",
                 "correct": true
             },
             {
-                "text": "... muitos vendedores e alguns compradores.",
+                "text": "Software para edição de imagens.",
                 "correct": false
             },
             {
-                "text": "... alguns vendedores e um comprador.",
+                "text": "Sistema de controle de estoque.",
                 "correct": false
             },
             {
-                "text": "... muitos vendedores e um comprador.",
+                "text": "Ferramenta para programação web.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "Numa situação de oligopólio...",
+        "question": "Qual a função de um VPN?",
         "answers": [
             {
-                "text": "... existe um número reduzido de vendedores.",
+                "text": "Estabelecer uma conexão segura através de uma rede pública.",
                 "correct": true
             },
             {
-                "text": "... a procura é superior à oferta.",
+                "text": "Gerenciar servidores de e-mail.",
                 "correct": false
             },
             {
-                "text": "... a oferta é superior à procura.",
+                "text": "Criar redes sociais corporativas.",
                 "correct": false
             },
             {
-                "text": "... existe um único vendedor.",
+                "text": "Desenvolver aplicativos móveis.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "Verifica-se que a procura do bem Y aumenta em resultado do aumento do preço do bem Z (mantendo-se tudo o resto constante). Então, pode concluir-se que...",
+        "question": "O que é um ataque de força bruta?",
         "answers": [
             {
-                "text": "Z e Y são bens substitutos.",
+                "text": "Tentativa de adivinhar senhas repetidamente.",
                 "correct": true
             },
             {
-                "text": "Y é um bem de primeira necessidade.",
+                "text": "Explora vulnerabilidades de software.",
                 "correct": false
             },
             {
-                "text": "Z é um bem inferior.",
+                "text": "Usa engenharia social para obter informações confidenciais.",
                 "correct": false
             },
             {
-                "text": "Z e Y são bens complementares.",
+                "text": "Intercepta comunicações entre computadores.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "O mercado de certo bem é um mercado de concorrência perfeita. Então, nesse mercado, existem...",
+        "question": "O que é ransomware?",
         "answers": [
             {
-                "text": "muitos compradores e muitos vendedores.",
+                "text": "Programa que criptografa arquivos e exige resgate para descriptografá-los.",
                 "correct": true
             },
             {
-                "text": "poucos compradores e muitos vendedores.",
+                "text": "Tipo de firewall.",
                 "correct": false
             },
             {
-                "text": "poucos compradores e poucos vendedores.",
+                "text": "Tipo de antivírus.",
                 "correct": false
             },
             {
-                "text": "muitos compradores e poucos vendedores.",
+                "text": "Software de backup.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "Em certo momento, verificou-se o aumento da oferta do bem D. Um fator que pode explicar esse aumento é...",
+        "question": "O que é phishing?",
         "answers": [
             {
-                "text": "o aumento da produtividade na produção do bem D.",
+                "text": "Técnica de engenharia social que envolve envio de emails fraudulentos.",
                 "correct": true
             },
             {
-                "text": "a diminuição do preço do bem D.",
+                "text": "Tipo de ataque de negação de serviço.",
                 "correct": false
             },
             {
-                "text": "o aumento do salário dos trabalhadores que produzem o bem D.",
+                "text": "Método de criptografia de dados.",
                 "correct": false
             },
             {
-                "text": "a diminuição da procura do bem D.",
+                "text": "Técnica de firewall.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "Suponha que o preço dos combustíveis aumentou num dado momento. Então, permanecendo tudo o resto constante, é previsível...",
+        "question": "O que é um trojan?",
         "answers": [
             {
-                "text": "a diminuição da procura de automóveis.",
+                "text": "Software malicioso que se disfarça como aplicativo legítimo.",
                 "correct": true
             },
             {
-                "text": "o aumento da procura de pneus.",
+                "text": "Tipo de adware.",
                 "correct": false
             },
             {
-                "text": "o aumento da oferta de automóveis.",
+                "text": "Tipo de spyware.",
                 "correct": false
             },
             {
-                "text": "a diminuição da oferta de bicicletas.",
+                "text": "Tipo de ransomware.",
                 "correct": false
             }
         ]
     },
     {
-        "question": "A homogeneidade do produto é um dos pressupostos do mercado de concorrência perfeita. Este pressuposto significa que",
+        "question": "O que é autenticação de dois fatores?",
         "answers": [
             {
-                "text": "os bens vendidos nesse mercado têm, para os consumidores, características iguais.",
+                "text": "Método de autenticação que requer duas formas diferentes de verificação de identidade.",
                 "correct": true
             },
             {
-                "text": "as empresas que atuam nesse mercado têm todas a mesma dimensão.",
+                "text": "Método de criptografia de dados.",
                 "correct": false
             },
             {
-                "text": "os consumidores, nesse mercado, adotam todos o mesmo comportamento.",
+                "text": "Tipo de ataque de negação de serviço.",
                 "correct": false
             },
             {
-                "text": "as mercadorias vendidas nesse mercado têm sempre o mesmo preço.",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "Quando afirmamos que um determinado mercado é de concorrência perfeita, tal significa que se verificam certas características, nomeadamente, o facto de",
-        "answers": [
-            {
-                "text": "o número de empresas a operar no mercado ser elevado.",
-                "correct": true
-            },
-            {
-                "text": "o produto transacionado no mercado ser diferenciado.",
-                "correct": false
-            },
-            {
-                "text": "o preço a que o bem é vendido no mercado ser baixo.",
-                "correct": false
-            },
-            {
-                "text": "o acesso a esse mercado estar sujeito a barreiras.",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "Num mercado de concorrência perfeita, mantendo-se tudo o resto constante, a lei da procura traduz",
-        "answers": [
-            {
-                "text": "a diminuição da quantidade procurada quando o preço do bem aumenta.",
-                "correct": true
-            },
-            {
-                "text": "a diminuição da quantidade procurada quando o preço do bem diminui.",
-                "correct": false
-            },
-            {
-                "text": "o aumento da quantidade procurada quando o rendimento das Famílias aumenta.",
-                "correct": false
-            },
-            {
-                "text": "o aumento da quantidade procurada quando o rendimento das Famílias diminui.",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "Um oligopólio é uma estrutura do mercado em que existe",
-        "answers": [
-            {
-                "text": "um número reduzido de vendedores, com capacidade de influenciar o preço de mercado.",
-                "correct": true
-            },
-            {
-                "text": "um número muito elevado de vendedores de um produto diferenciado.",
-                "correct": false
-            },
-            {
-                "text": "um número muito elevado de vendedores de um produto homogéneo.",
-                "correct": false
-            },
-            {
-                "text": "um número reduzido de vendedores, sem capacidade de influenciar o preço de mercado.",
-                "correct": false
-            }
-        ]
-    },
-    {
-        "question": "Num mercado de concorrência monopolística, as muitas empresas existentes detêm algum poder de mercado. Esta afirmação é",
-        "answers": [
-            {
-                "text": "verdadeira, pois as empresas, ao venderem produtos diferenciados, têm algum controlo sobre os seus preços.",
-                "correct": true
-            },
-            {
-                "text": "verdadeira, pois as empresas, ao venderem produtos homogéneos, têm alguma capacidade de definir os seus preços.",
-                "correct": false
-            },
-            {
-                "text": "falsa, pois as empresas, como são de idêntica dimensão, têm de aceitar o preço de venda definido no mercado.",
-                "correct": false
-            },
-            {
-                "text": "falsa, pois as empresas, como apresentam custos idênticos, têm de vender ao preço definido no mercado.",
+                "text": "Técnica de firewall.",
                 "correct": false
             }
         ]

@@ -183,26 +183,26 @@ document.addEventListener('DOMContentLoaded', () => {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "zero-score-trophy.png"; 
         trophyImage.style.width = "400px";
-        trophyMessage.innerText = "O Jaimão está desapontado consigo.😞 Comece a estudar!";
+        trophyMessage.innerText = "É hora de reforçar os seus conhecimentos em segurança de informação.😞";
         trophyMessage.style.color = "red"; // Define a cor do texto como vermelho
         playZeroScoreSound(); // Reproduzir som de pontuação zero
-    } else if (score >= 110) {
+    } else if (score >= 80) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-expert.png";
         trophyImage.style.width = "400px";
-        trophyMessage.innerText = "Parabéns!😃 O Professor Jaime está muito orgulhoso de ti!";
+        trophyMessage.innerText = "Parabéns!😃 És um especialista em segurança da informação!";
         playApplauseSound();
-    } else if (score >= 70) {
+    } else if (score >= 50) {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-intermediate.png";
         trophyImage.style.width = "400px";
-        trophyMessage.innerText = "Bom trabalho!👍 Continua a estudar para melhorar.";
+        trophyMessage.innerText = "Bom trabalho!👍 Continue a estudar para melhorar.";
         playCheersSound();
     } else {
         trophyContainer.classList.remove("hide");
         trophyImage.src = "trophy-beginner.png";
         trophyImage.style.width = "400px";
-        trophyMessage.innerText = "Continua a estudar!💪 Podes fazer melhor.";
+        trophyMessage.innerText = "Continue a estudar!💪 Podes fazer melhor.";
         // Não definir a cor do texto aqui para que permaneça a preto por padrão
         playEncouragementSound();
     }
@@ -273,4 +273,4 @@ function playZeroScoreSound() {
         // Remova a classe hide do botão "Reiniciar Jogo" para exibi-lo
         document.getElementById("restart-button").classList.remove("hide");
     }
-});
+});                                                     
