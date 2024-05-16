@@ -241,17 +241,17 @@ body {
 @media only screen and (max-width: 600px) {
     /* Ajustes de tamanho para elementos em telas menores */
     .game-title {
-        font-size: 1.5rem;
+        font-size: 2rem; /* Aumenta o tamanho do título em telas pequenas */
     }
     .btn {
-        font-size: 0.8rem;
+        font-size: 1rem; /* Aumenta o tamanho dos botões em telas pequenas */
         padding: 8px 16px; /* Reduza um pouco o preenchimento dos botões */
     }
     #introduction,
     #question-text,
     #trophy-message,
     #final-score {
-        font-size: 1rem; /* Ajuste do tamanho da fonte */
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte em telas pequenas */
     }
 }
 
